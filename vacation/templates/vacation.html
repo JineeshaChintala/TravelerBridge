@@ -1,0 +1,112 @@
+{% extends 'index.html' %}
+{%load static%}
+{%block body%}
+<div class="fh5co-hero">
+	<div class="fh5co-overlay"></div>
+	<div class="fh5co-cover" data-stellar-background-ratio="0.5"
+		style="background-image: url(https://c4.wallpaperflare.com/wallpaper/551/299/734/sand-sea-beach-summer-star-hd-wallpaper-preview.jpg);">
+		<div class="desc">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-md-5">
+						<div class="tabulation animate-box">
+							<h1 style="text-align: center;margin: 20px; font-family: bold;">Search Tourist Spots</h1><br>
+							<form action="{% url 'vacation_search' %}" method="GET">
+								<div class="input-row">
+									<label for="city" style="margin-left: 5px;">Select a city:</label>
+									<select style="margin: 2px; width:99%;" name="city" id="city" class="form-control mr-sm-2 selectpicker">
+										{% for city in cities %}
+										    <option value="{{ city.id }}">{{ city.name }}</option>
+										{% endfor %}
+									</select><br>
+									<div class="col-xs-12">
+										<button type="submit" class="btn btn-primary btn-block"
+											style="margin-top:20px;margin-bottom: 20px;">Search</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+	<div id="fh5co-tours" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+					<h3>Tourist Spots</h3>
+					<p>Tourist spots are popular attractions that offer a variety of experiences, from natural wonders
+						and
+						scenic landmarks to cultural and historical landmarks, and are often visited by travelers
+						seeking to
+						explore new destinations and create unforgettable memories.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+					<div href="#"><style>
+						.rectangular-image {
+						  width: 600px;
+						  height: 400px;
+						  object-fit: cover;
+						}
+					  </style>
+					  
+					  <img src="https://img.freepik.com/free-photo/mesmerizing-shot-famous-historic-taj-mahal-agra-india_181624-16028.jpg" class="img-responsive rectangular-image">
+					  
+						<div class="desc">
+							<span></span>
+							<h3>India</h3>
+							<a class="btn btn-primary btn-outline" href="https://en.wikipedia.org/wiki/India" target="_blank">Explore Now <i
+									class="icon-arrow-right22"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+					<div href="#"><style>
+						.rectangular-image {
+						  width: 600px;
+						  height: 400px;
+						  object-fit: cover;
+						}
+					  </style>
+					  
+					  <img src="https://c4.wallpaperflare.com/wallpaper/317/425/216/coast-turquoise-water-beach-palawan-wallpaper-preview.jpg" class="img-responsive rectangular-image">
+					  
+						<div class="desc">
+							<span></span>
+							<h3>Philippines</h3>
+							<a class="btn btn-primary btn-outline" href="https://en.wikipedia.org/wiki/Philippines" target="_blank">Explore Now <i
+									class="icon-arrow-right22"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 fh5co-tours animate-box" data-animate-effect="fadeIn">
+					<div href="#"><style>
+						.rectangular-image {
+						  width: 600px;
+						  height: 400px;
+						  object-fit: cover;
+						}
+					  </style>
+					  
+					  <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG9uZyUyMGtvbmd8ZW58MHx8MHx8&w=1000&q=80" class="img-responsive rectangular-image">
+					  
+						<div class="desc">
+							<span></span>
+							<h3>Hongkong</h3>
+							<a class="btn btn-primary btn-outline" href="https://en.wikipedia.org/wiki/Hong_Kong" target="_blank">Explore Now<i
+									class="icon-arrow-right22"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	{% endblock %}

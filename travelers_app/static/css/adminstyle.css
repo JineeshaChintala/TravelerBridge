@@ -1,0 +1,85 @@
+.dashboard #content-main {
+    float: left;
+    width: 200%;
+}
+.dashboard #content-related {
+    float: right;
+    width: 317px;
+    position: relative;
+    margin-right: -328px;
+}
+.login #header {
+    background: #F78536;;
+}
+#header h1 {
+    font-size: 19px !important;
+    color: black;
+    font-weight: bold;
+}
+img {
+    margin-right: 8px;
+}
+input[type="submit"] {
+    background:#F78536;
+}
+form#login-form {
+    font-weight: bold;
+}
+.module caption {
+    background:#ec9353;
+    padding: 11px;
+    font-weight: bold;
+}
+#content-related .module h2 {
+    font-weight: bold;
+    background: rgb(212, 126, 35);
+    color: #ea711a;
+}
+.content h1 {
+    font-weight: bold;
+}
+#user-tools {
+    font-weight: bold;
+    font-size: 13px;
+}
+body.dashboard {
+    background: #d3d3d3;
+}
+th {
+    padding: 10px;
+}
+div.breadcrumbs {
+    background:#e69860;
+    padding: 10px 40px;
+    border: none;
+    color: white;
+    text-align: left;
+}
+nav#nav-sidebar {
+    margin-top: 10px;
+}
+
+button#toggle-nav-sidebar {
+    background: cadetblue;
+    color: #000000;
+    font-size: 24px;
+}
+#changelist table thead th {
+    background: rgb(228, 146, 39);
+    font-family: cursive;
+    padding: 4px !important;
+    font-size: 12px !important;
+}
+table thead th .text a, table thead th .text span {
+    color:black;
+}
+.app-auth .content tr:nth-child(odd), .app-shop .content tr:nth-child(odd) {
+    background: #ffe5e5;
+}
+.app-auth .content tr:nth-child(even), .app-shop .content tr:nth-child(even) {
+    background: #ececec;
+}
+.object-tools a.addlink {
+    background-color: rgb(63, 178, 227);
+}
+

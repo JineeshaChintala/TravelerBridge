@@ -1,0 +1,33 @@
+{% extends 'admin/base.html' %}
+{%load static%}
+{% block branding %}
+
+
+
+<h1 id="head" style="padding-top: 12%;">
+  <a href="http://127.0.0.1:8000/admin"></a>
+  Travel
+</h1>
+{% endblock %}
+
+
+{% block extrastyle%}
+
+<link rel="stylesheet" href="{% static '/css/adminstyle.css'%}" />
+<style>
+  #recent-actions-module {
+            display: none;
+        }
+    button#toggle-nav-sidebar{
+      background:white;
+    }
+    #header{
+      background-color: #417690;;
+    }
+</style>
+
+{%endblock %}
+{% block content %}
+    {% block recent-actions %}{% endblock %}
+    {{ block.super }}
+{% endblock %}
